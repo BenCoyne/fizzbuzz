@@ -1,11 +1,13 @@
-for i in 1..100 do
-    if ((i % 5) == 0) && ((i % 3) == 0)
-      puts "FizzBuzz"
-    elsif (i % 5) == 0
-      puts "Buzz"
-    elsif (i % 3) == 0
-      puts "Fizz"
-    else
-      puts "#{i}"
-    end
+def fizzbuzz(i)
+  if i % 5 == 0 && i % 3 == 0
+   "fizzbuzz"
+  elsif i % 5 == 0
+    "buzz"
+  elsif i % 3 == 0
+    "fizz"
+  else
+    i
   end
+end
+
+
